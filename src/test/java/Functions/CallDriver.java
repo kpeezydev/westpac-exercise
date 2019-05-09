@@ -11,7 +11,7 @@ public class CallDriver {
         //String path = System.getProperty("user.dir");
 
         
-        System.setProperty("webdriver.chrome.driver","PATH/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver.exe");
 //      System.setProperty("webdriver.chrome.driver",path+"/drivers/chromedriver.exe" );
 //		ChromeOptions chromeOptions = new ChromeOptions();
 //		chromeOptions.setHeadless(true);
