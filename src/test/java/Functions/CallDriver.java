@@ -14,8 +14,8 @@ public class CallDriver {
         System.out.print("BLASABDSKLDSKLAKDHLSAKHLDKHLSAKHL");
         //System.out.println(Paths.get(""));
         
-        
-        System.setProperty("webdriver.chrome.driver",path+"/drivers/chromedriver.exe" );
+        System.setProperty("webdriver.chrome.driver","https://raw.githubusercontent.com/codeship/scripts/master/packages/chromedriver.sh");
+//        System.setProperty("webdriver.chrome.driver",path+"/drivers/chromedriver.exe" );
 //		ChromeOptions chromeOptions = new ChromeOptions();
 //		chromeOptions.setHeadless(true);
         driver = new ChromeDriver();
