@@ -9,13 +9,10 @@ public class CallDriver {
 
     public static WebDriver chrome(){//(String url){
         //String path = System.getProperty("user.dir");
- 
 
-        System.out.print("BLASABDSKLDSKLAKDHLSAKHLDKHLSAKHL");
-        //System.out.println(Paths.get(""));
         
-        System.setProperty("webdriver.chrome.driver","PATH");
-//        System.setProperty("webdriver.chrome.driver",path+"/drivers/chromedriver.exe" );
+        System.setProperty("webdriver.chrome.driver","PATH/chromedriver.exe");
+//      System.setProperty("webdriver.chrome.driver",path+"/drivers/chromedriver.exe" );
 //		ChromeOptions chromeOptions = new ChromeOptions();
 //		chromeOptions.setHeadless(true);
         driver = new ChromeDriver();
