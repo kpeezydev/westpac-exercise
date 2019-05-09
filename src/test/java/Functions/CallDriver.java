@@ -8,7 +8,7 @@ public class CallDriver {
     public static WebDriver driver;
 
     public static WebDriver chrome(){//(String url){
-        String path = System.getProperty("user.dir");
+        //String path = System.getProperty("user.dir");
  
 
         System.out.print("BLASABDSKLDSKLAKDHLSAKHLDKHLSAKHL");
