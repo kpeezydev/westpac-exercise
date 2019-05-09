@@ -9,8 +9,8 @@ public class CallDriver {
 
     public static WebDriver chrome(){//(String url){
         String path = System.getProperty("user.dir");
-        String pathCi = System.getProperty("user.dir\\");
-        System.setProperty("webdriver.chrome.driver",path+"\\drivers\\chromedriver.exe" );
+ 
+        System.setProperty("webdriver.chrome.driver",path+"tree/master/drivers/chromedriver.exe" );
 //		ChromeOptions chromeOptions = new ChromeOptions();
 //		chromeOptions.setHeadless(true);
         driver = new ChromeDriver();
