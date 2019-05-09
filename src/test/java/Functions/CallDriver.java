@@ -10,7 +10,7 @@ public class CallDriver {
     public static WebDriver chrome(){//(String url){
         String path = System.getProperty("user.dir");
  
-     //  System.setProperty("webdriver.chrome.driver",path+"/tree/master/drivers/chromedriver.exe" );
+
         System.out.print("BLASABDSKLDSKLAKDHLSAKHLDKHLSAKHL");
         //System.out.println(Paths.get(""));
         
