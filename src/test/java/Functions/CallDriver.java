@@ -13,7 +13,7 @@ public class CallDriver {
 
         
       //  System.setProperty("webdriver.chrome.driver","chromedriver.sh");
-      System.setProperty("webdriver.chrome.driver",path+"/drivers/chromedriver.sh" );
+      System.setProperty("webdriver.chrome.driver",path+"/drivers/chromedriver" );
 //		ChromeOptions chromeOptions = new ChromeOptions();
 //		chromeOptions.setHeadless(true);
         driver = new ChromeDriver();
