@@ -30,6 +30,7 @@ public class VerifyDisplayedMessage {
         commonFunctions.urlAddress(url);
         //navigate to calculator page
         commonFunctions.navigateToCalulator();
+        commonFunctions.sleep();
         verificationFunctions.verifyMessage();
     }
 

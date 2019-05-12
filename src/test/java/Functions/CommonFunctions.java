@@ -130,6 +130,15 @@ public class CommonFunctions extends DriverBaseClass {
         Reporter.log(msg);
     }
 
+    public void sleep(){
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
 
 
 }
