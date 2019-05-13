@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
 
 
 public class CommonFunctions extends DriverBaseClass {
@@ -130,15 +131,17 @@ public class CommonFunctions extends DriverBaseClass {
         Reporter.log(msg);
     }
 
-    public void sleep(){
+
+    public void pause(long seconds){
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(1000 * seconds);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
     }
+
 
 
 }

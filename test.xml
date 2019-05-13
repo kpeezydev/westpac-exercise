@@ -9,7 +9,7 @@
         </classes>
     </test>
 
-
+  
     <test name="RetirementCalculatorScenario1">
         <parameter name="url" value="https://www.westpac.co.nz/"/>
         <parameter name="age" value="30"/>
@@ -22,7 +22,6 @@
             <class name="Scripts.RetirementCalculatorScenario1"/>
         </classes>
     </test>
-
 
 
     <test name="RetirementCalculatorScenario2">

@@ -32,8 +32,8 @@ public class RetirementCalculatorScenario3 {
         commonFunctions.urlAddress(url);
         //navigate to calculator page
         commonFunctions.navigateToCalulator();
-        //wait to load
-        commonFunctions.sleep();
+        //pause
+        commonFunctions.pause(5);
         //input scenario details
         commonFunctions.currentAgeInput(age);
         commonFunctions.employmentStatusInput(employeeStatusVal);
