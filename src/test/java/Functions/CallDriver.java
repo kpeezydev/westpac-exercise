@@ -28,6 +28,7 @@ public class CallDriver {
         } else {
             System.setProperty("webdriver.chrome.driver", path + "/drivers/chromedriver-linux");
         }
+        
     }
 
 } 
