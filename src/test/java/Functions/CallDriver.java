@@ -2,7 +2,6 @@ package Functions;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.io.File;
 
 public class CallDriver {
@@ -18,6 +17,7 @@ public class CallDriver {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         return driver;
+
     }
 
     private static void setChromedriverInstance() {
@@ -28,7 +28,11 @@ public class CallDriver {
         } else {
             System.setProperty("webdriver.chrome.driver", path + "/drivers/chromedriver-linux");
         }
-        
     }
 
-} 
+
+
+
+
+
+}

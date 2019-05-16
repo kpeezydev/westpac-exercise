@@ -34,6 +34,7 @@ public class CommonFunctions extends DriverBaseClass {
 
     public void navigateToCalulator() {
 
+        Actions action = new Actions(driver);
         action.moveToElement(commonObj.kiwiSaver).perform();
         commonObj.kiwiSaverCalc.click();
         commonObj.getStarted.click();
@@ -102,6 +103,13 @@ public class CommonFunctions extends DriverBaseClass {
     public void clickCalculate() {
         commonObj.calculateBtn.click();
         System.out.println("========== Calculating......... ==========");
+    }
+
+    public void clickCurrentAgeInfo() {
+
+        driver.switchTo().frame(commonObj.frameCalcu);
+        commonObj.currentAgeInfo.click();
+
     }
 
     public void graphScreenShot(String testName)  {

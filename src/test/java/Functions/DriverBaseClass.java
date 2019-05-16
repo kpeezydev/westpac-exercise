@@ -9,4 +9,5 @@ public class DriverBaseClass {
     public DriverBaseClass(WebDriver driver){
         DriverBaseClass.driver = driver;
     }
+
 }

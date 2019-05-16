@@ -3,10 +3,7 @@ package Scripts;
 import Functions.CallDriver;
 import Functions.CommonFunctions;
 import Functions.VerificationFunctions;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.openqa.selenium.WebDriver;
 
 
@@ -25,7 +22,7 @@ public class VerifyDisplayedMessage {
 
     @Test
     @Parameters({"url"})
-    public void run(String url) throws InterruptedException {
+    public void run(String url) {
         ////enter to URL
         commonFunctions.urlAddress(url);
         //navigate to calculator page

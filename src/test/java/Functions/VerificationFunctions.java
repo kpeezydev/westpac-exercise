@@ -16,7 +16,7 @@ public class VerificationFunctions extends DriverBaseClass {
         super(driver);
     }
 
-    public void verifyMessage() throws InterruptedException {
+    public void verifyMessage() {
 
         driver.switchTo().frame(commonObj.frameCalcu);
         commonObj.currentAgeInfo.click();
@@ -26,7 +26,7 @@ public class VerificationFunctions extends DriverBaseClass {
         Assert.assertTrue(expectedMessage.contains(message), "message did not match");
         String msg = "========== expected message was displayed ==========";
         System.out.println(msg);
-        Reporter.log(msg);
+        //Reporter.log(msg);
 
     }
 
@@ -63,6 +63,18 @@ public class VerificationFunctions extends DriverBaseClass {
         System.out.println(msg);
         Reporter.log(msg);
 
+
+    }
+
+    public void verifyDisplayedMessage()  {
+
+        String expectedMessage = "This calculator has an age limit of 64 years old as you need to be under the age of 65 to join KiwiSaver.";
+        System.out.println("===== expected message: "+expectedMessage+" =====");
+        String message = commonObj.currentAgeMsg.getText();
+        Assert.assertTrue(expectedMessage.contains(message), "message did not match");
+        String msg = "========== expected message was displayed ==========";
+        System.out.println(msg);
+        Reporter.log(msg);
 
     }
 
