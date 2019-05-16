@@ -23,8 +23,9 @@ public class TestListener extends CallDriver implements ITestListener {
         Date currentDateAndTime = Calendar.getInstance().getTime();
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy-hh.mm.ss");
         String formattedDateAndTime = dateFormat.format(currentDateAndTime);
-        String path = System.getProperty("user.dir");
-        String createdFile = path + "/TestReport/" + formattedDateAndTime + ".html";
+        String path = System.getProperty("user.dir") + "/TestReport/" ;
+        String createdFile = path + formattedDateAndTime + ".html";
+        ExtentManager.createReportPath(path);
         extent = ExtentManager.createInstance(createdFile);
         System.out.println("see test result at: "+createdFile);
     }
